@@ -49,7 +49,7 @@ function ch_give(idname, player, choice)
   local user_id = vRP.getUserId(player)
   if user_id ~= nil then
     -- get nearest player
-    vRPclient.getNearestPlayer(player,{vrpInv.ConfigStats.PlayerGiveRadius},function(nplayer)
+    vRPclient.getNearestPlayer(player,{10},function(nplayer)
       if nplayer ~= nil then
         local nuser_id = vRP.getUserId(nplayer)
         if nuser_id ~= nil then
